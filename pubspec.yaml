@@ -1,0 +1,44 @@
+name: task_athr
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.1.0
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/image/
+  fonts:
+    - family: sourceSansPro
+      fonts:
+        - asset: assets/fonts/source-sans-pro.bold.ttf
+          weight: 700
+        - asset: assets/fonts/source-sans-pro.semibold.ttf
+          weight: 600
+        - asset: assets/fonts/source-sans-pro.regular.ttf
+          weight: 400
+        - asset: assets/fonts/source-sans-pro.light.ttf
+          weight: 300

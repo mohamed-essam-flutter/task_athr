@@ -21,4 +21,40 @@ class TextStyles {
     fontWeight: FontWeightManager.regular,
     color: ColorManager.placeHolder,
   );
+
+  static TextStyle font20PrimaryRegular = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeightManager.regular,
+    color: ColorManager.white
+  );
+  static TextStyle font20PrimaryBold = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeightManager.bold,
+    color: ColorManager.white
+  );
+   static TextStyle font20PrimarySemiBold = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeightManager.semiBold,
+    color: ColorManager.white
+  );
+   static TextStyle font16BlackBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.bold,
+    color: ColorManager.black
+  );
+  static TextStyle font16BlackSemiBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.semiBold,
+    color: ColorManager.black
+  );
+    static TextStyle font16WhiteBoldButton = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.bold,
+    color: ColorManager.white
+  );
+   static TextStyle font16WhiteRegular = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.regular,
+    color: ColorManager.white
+  );
 }

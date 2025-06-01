@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task_athr/core/routes/app_router.dart';
+import 'package:task_athr/core/routes/routes_manager.dart';
+import 'package:task_athr/core/utils/font_manager.dart';
 import 'package:task_athr/presentation/chat/view/chat.dart';
 
 void main() {
@@ -18,10 +21,13 @@ class MyApp extends StatelessWidget {
           (context, child) => Builder(
             builder: (context) {
               return MaterialApp(
+                theme: ThemeData(
+                  fontFamily: FontConstants.fontFamily
+                ),
                 home: ChatScreen(),
                 debugShowCheckedModeBanner: false,
-                // onGenerateRoute: AppRouter.onGenerateRoute,
-                // initialRoute: RoutesManager.splash,
+                onGenerateRoute: AppRouter.onGenerateRoute,
+                initialRoute: RoutesManager.chat,
               );
             },
           ),
